@@ -54,7 +54,7 @@ $product = "armchair";
 $price = 249.00;
 $tax = 0.13;
 $delivery = 0.05;
-$total = ($price * $delivery) + ($price * $tax) + $price;
+$total = ($price + $price * $delivery) + ($price + $price * $delivery) * $tax;
 
 echo $product . ": " . "$" . $total;
 
